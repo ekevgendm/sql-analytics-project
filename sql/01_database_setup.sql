@@ -21,14 +21,14 @@ CREATE TABLE employees (
 
 INSERT INTO employees (name, department_id, salary, hire_date)
 VALUES
-    ('Anna Petrova', 1, 95000, '2022-03-15'),
-    ('Ivan Smirnov', 1, 78000, '2023-06-10'),
-    ('Maria Volkova', 2, 85000, '2021-11-20'),
-    ('Alexey Orlov', 2, 72000, '2024-01-12'),
-    ('Elena Sokolova', 3, 125000, '2022-09-05'),
-    ('Dmitry Kozlov', 3, 110000, '2023-02-18'),
-    ('Olga Morozova', 4, 105000, '2021-07-30'),
-    ('Sergey Fedorov', 4, 82000, '2024-04-22');
+    ('Employee 01', 1, 95000, '2022-03-15'),
+    ('Employee 02', 1, 78000, '2023-06-10'),
+    ('Employee 03', 2, 85000, '2021-11-20'),
+    ('Employee 04', 2, 72000, '2024-01-12'),
+    ('Employee 05', 3, 125000, '2022-09-05'),
+    ('Employee 06', 3, 110000, '2023-02-18'),
+    ('Employee 07', 4, 105000, '2021-07-30'),
+    ('Employee 08', 4, 82000, '2024-04-22');
 
 
 CREATE TABLE customers (
@@ -40,12 +40,12 @@ CREATE TABLE customers (
 
 INSERT INTO customers (name, city, registration_date)
 VALUES
-    ('Pavel Ivanov', 'Moscow', '2024-01-15'),
-    ('Sofia Petrova', 'Saint Petersburg', '2024-02-10'),
-    ('Nikita Volkov', 'Moscow', '2024-03-05'),
-    ('Irina Smirnova', 'Kazan', '2024-04-18'),
-    ('Roman Kuznetsov', 'Moscow', '2024-05-22'),
-    ('Alina Morozova', 'Sochi', '2024-06-30');
+    ('Customer 01', 'Moscow', '2024-01-15'),
+    ('Customer 02', 'Saint Petersburg', '2024-02-10'),
+    ('Customer 03', 'Moscow', '2024-03-05'),
+    ('Customer 04', 'Kazan', '2024-04-18'),
+    ('Customer 05', 'Moscow', '2024-05-22'),
+    ('Customer 06', 'Sochi', '2024-06-30');
 
 
 CREATE TABLE products (
