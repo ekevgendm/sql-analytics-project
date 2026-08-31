@@ -1,3 +1,7 @@
+-- Database structure and sample data
+
+-- Departments
+
 CREATE TABLE departments (
     department_id SERIAL PRIMARY KEY,
     department_name VARCHAR(100) NOT NULL
@@ -10,6 +14,8 @@ VALUES
     ('IT'),
     ('Finance');
 
+
+-- Employees
 
 CREATE TABLE employees (
     employee_id SERIAL PRIMARY KEY,
@@ -31,6 +37,8 @@ VALUES
     ('Employee 08', 4, 82000, '2024-04-22');
 
 
+-- Customers
+
 CREATE TABLE customers (
     customer_id SERIAL PRIMARY KEY,
     name VARCHAR(100) NOT NULL,
@@ -47,6 +55,8 @@ VALUES
     ('Customer 05', 'Moscow', '2024-05-22'),
     ('Customer 06', 'Sochi', '2024-06-30');
 
+
+-- Products
 
 CREATE TABLE products (
     product_id SERIAL PRIMARY KEY,
@@ -68,6 +78,8 @@ VALUES
     ('Winter Jacket', 'Clothing', 22000, 20);
 
 
+-- Orders
+
 CREATE TABLE orders (
     order_id SERIAL PRIMARY KEY,
     customer_id INT REFERENCES customers(customer_id),
@@ -86,6 +98,8 @@ VALUES
     (6, '2024-07-18', 'completed'),
     (2, '2024-07-20', 'completed');
 
+
+-- Order items
 
 CREATE TABLE order_items (
     order_item_id SERIAL PRIMARY KEY,
